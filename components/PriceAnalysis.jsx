@@ -1,4 +1,6 @@
-import Plot from 'react-plotly.js';
+//import Plot from 'react-plotly.js';
+
+const Plot = require('react-plotly.js').default;
 
 const PriceAnalysis = ({ price, shipping, currency, history }) => {
   const priceHistory = history.map((h) => {
