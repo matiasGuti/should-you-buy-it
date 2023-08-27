@@ -1,6 +1,8 @@
 //import Plot from 'react-plotly.js';
+import dynamic from 'next/dynamic';
+//const Plot = require('react-plotly.js').default;
 
-const Plot = require('react-plotly.js').default;
+const Plot = dynamic(() => import('react-plotly.js'), { ssr: false });
 
 const PriceAnalysis = ({ price, shipping, currency, history }) => {
   const priceHistory = history.map((h) => {
