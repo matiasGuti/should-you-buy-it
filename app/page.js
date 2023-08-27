@@ -55,7 +55,7 @@ const Home = () => {
     } finally {
       setIsLoading(false);
     }
-    //setProductURL('');
+    setProductURL('');
   };
 
   const removeFromList = (id) => {
